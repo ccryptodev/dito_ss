@@ -1,0 +1,189 @@
+//CUSTOM FONT FAVORITMONO-REGULAR//
+@font-face {
+
+    font-family: 'FavoritMono-Regular';
+
+       src: url('https://static1.squarespace.com/static/6723998205c672734808c21e/t/67239c4e144f8f796325908b/1730387022596/FavoritMono-Regular.otfFontURL');
+
+  }
+
+
+h1 {
+  	font-family: 'FavoritMono-Regular';
+	text-transform: uppercase;}
+h2 {
+  	font-family: 'FavoritMono-Regular';
+	text-transform: uppercase;}
+h3 {
+  	font-family: 'FavoritMono-Regular';
+  text-transform: uppercase;}
+h4 {
+  	font-family: 'FavoritMono-Regular';
+	text-transform: uppercase;}
+
+p {font-family: 'FavoritMono-Regular';}
+
+.hidden {
+  display: none !important;
+}
+
+//REMOVE HEADER AND FOOTER FROM SPLASH & HOME PAGE//
+#collection-67239a1574aed97b3c95e8c9{
+ footer, header{
+  display: none !important;
+ }
+}
+
+#collection-67239a0b61c0c14884f360f4{
+ footer, header{
+  display: none !important;
+ }
+}
+
+// H4 VERTICAL TEXT
+
+h2 { 
+writing-mode: vertical-rl;
+transform: rotate(180deg);
+margin: 0 auto;
+position: relative;
+right: 10px;
+}
+
+
+/* FORM BLOCKS TRANSPARENT FILL */
+
+.newsletter-form-field-element { 
+    background: none !important;
+  	border: solid 2px #FFFFFF !important;
+}
+
+// MOBILE NAV WHITE //
+@media only screen and (max-width: 767px){
+header#header {
+background-color: #FFFFFF !important;
+  }
+}
+
+//custom button colors for bodywork//
+#block-1db3b1722f8a17cc3aa0 a {
+    color: #780000;
+    border: #780000
+}
+
+// HIDDEN ELEMENTS ON MOBILE //
+
+@media only screen and (max-width: 768px) {#block-yui_3_17_2_1_1730386310595_29373, #block-702a6496098ac23b2e77, #block-2913455a041ed6a6c598, #block-ec10724b9308473e3f92 {display: none;}
+
+}
+
+// CUSTOM CURSOR //
+
+/* html, body {
+     cursor: url(https://static1.squarespace.com/static/6723998205c672734808c21e/t/6724f0c919f42375d60c928e/1730474185830/Metaphysica_Logomark_Orange.png), auto;
+   }
+
+a:hover {
+cursor: url(https://static1.squarespace.com/static/6723998205c672734808c21e/t/6724f18596ff9f5c0ac20320/1730474373912/Metaphysica_Logomark_Black.png), auto !important; 
+}
+
+input {
+cursor: url(https://static1.squarespace.com/static/6723998205c672734808c21e/t/6724f0c919f42375d60c928e/1730474185830/Metaphysica_Logomark_Orange.png), auto !important; 
+}
+
+textarea {
+cursor: url(https://static1.squarespace.com/static/6723998205c672734808c21e/t/6724f0c919f42375d60c928e/1730474185830/Metaphysica_Logomark_Orange.png), auto !important;
+}
+
+.sqs-system-button {
+    cursor: url(https://static1.squarespace.com/static/6723998205c672734808c21e/t/6724f0c919f42375d60c928e/1730474185830/Metaphysica_Logomark_Orange.png),auto !important;
+} */
+
+.newsletter-form-body input,
+newsletter-form-body button.newsletter-form-button {
+  height: 4.3rem;
+}
+#email-yui_3_17_2_1_1730387644300_10274-field::placeholder {
+    color: #fff; 
+    opacity: 0.8; 
+}
+/* toggle button */
+.extendable-section {
+  display: block !important;
+  margin: auto 6rem;
+}
+.section-title {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.extendable-section > div:nth-child(1){
+  display: inline-block;
+  float: left;
+}
+.extendable-section > div:nth-child(2){
+  display: inline-block;
+  float: right;
+}
+.toggle-button {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+  	line-height: 50px;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.toggle-button:focus {
+    outline: none; 
+}
+
+.toggle-arrow {
+    transition: transform 0.2s ease;
+}
+
+.custom-arrow {
+  width: 47px;
+  height: 45px;
+  stroke-width: 2;
+}
+
+#therapist_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+  max-width: 800px; 
+  margin: 0 auto; 
+  margin-top: 4rem;
+}
+
+.therapist {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.therapist-name {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.plus-sign {
+  margin-right: 8px;
+  font-size: 18px; 
+}
+
+.name {
+  margin: 0;
+}
+
+.therapist-type {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px; 
+}
