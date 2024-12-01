@@ -1,5 +1,3 @@
-
-
 /* REMOVE HEADER AND FOOTER FROM SPLASH PAGE */
 #collection-673ba3322200d54b391a676d {
   footer, header{
@@ -24,7 +22,7 @@ h3 {
 	text-transform: uppercase;
 }
 
-p3 {
+sqsrte-small {
   font-family: 'Memphis-LT-Std-Medium';
 }
 
@@ -167,4 +165,14 @@ button.newsletter-form-button.sqs-system-button.sqs-editable-button-layout.sqs-e
   section[data-section-id="6747a743673b226a9e6d37bd"]{
     display: none;
   }
+}
+
+/*HIDE NEXT & PREVIOUS CONTROLS AT BOTTOM OF BLOG*/
+.item-pagination[data-collection-type^="blog"]{
+	display: none;
+}
+
+/* product title */
+.ProductItem .ProductItem-details h1.ProductItem-details-title {
+  font-family: 'itc-esprit-std-book';
 }
