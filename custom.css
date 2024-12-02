@@ -103,6 +103,7 @@ section[data-section-id="6746e2109b9b626930f9a1b6"] {
       line-height: 1em;
       margin: 1em 0 .2em 0;
       display: inline-block;
+      font-family: 'itc-esprit-std-book';
     }
     .product-price {
       line-height: 2rem !important;
@@ -175,4 +176,9 @@ button.newsletter-form-button.sqs-system-button.sqs-editable-button-layout.sqs-e
 /* product title */
 .ProductItem .ProductItem-details h1.ProductItem-details-title {
   font-family: 'itc-esprit-std-book';
+}
+
+/* Hiding navigation menu */
+.header-layout-nav-right .header-nav {
+    visibility: hidden;
 }
