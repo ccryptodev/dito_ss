@@ -1,7 +1,18 @@
-
-
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  /* Showing the navigation after first scroll down */
+  const headerNav = document.querySelector(".header-nav");
+
+  if (headerNav) {
+    let hasScrolled = false;
+    window.addEventListener("scroll", function () {
+      if (!hasScrolled && window.scrollY > 0) {
+        headerNav.style.visibility = "visible";
+        hasScrolled = true;
+      }
+    });
+  }
+  
   const carousel = document.querySelector('.summary-item-list-container');
 
   if (carousel) {
