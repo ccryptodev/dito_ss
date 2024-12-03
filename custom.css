@@ -25,6 +25,9 @@ h3 {
 sqsrte-small {
   font-family: 'Memphis-LT-Std-Medium';
 }
+.sqsrte-small {
+  font-family: 'Memphis-LT-Std-Medium';
+}
 
 /* HIDE EVENTS LIST ON EVENTS PAGE */
 @media screen {
@@ -173,12 +176,102 @@ button.newsletter-form-button.sqs-system-button.sqs-editable-button-layout.sqs-e
 	display: none;
 }
 
+/* Titles in ESpirit font */
 /* product title */
 .ProductItem .ProductItem-details h1.ProductItem-details-title {
   font-family: 'itc-esprit-std-book';
+  text-transform: capitalize;
+}
+
+/* The title of the related products on product details */
+.ProductItem-relatedProducts .grid-main-meta .grid-title,
+.products-flex-container .grid-main-meta .grid-title {
+  text-transform: capitalize;
+}
+
+/* category titles */
+section[data-section-id="673bace68a693d1ae2b720f6"] {
+  .sqs-html-content h2 {
+    // font-family: 'itc-esprit-std-book';
+  }
+}
+.sqs-html-content h1 {
+  // font-family: 'itc-esprit-std-book';
+}
+
+/* Fonts on blog page */
+.blog-item-wrapper .blog-item-title h1.entry-title {
+  font-family: 'itc-esprit-std-book';
+}
+.blog-item-content-wrapper .sqs-html-content {
+  font-family: 'Memphis-LT-Std-Medium';
+}
+
+/* The desc font in Digest page */
+section[data-section-id="673bc51a2b31702485996a23"],
+section[data-section-id="673bc5e58ccb794c56ee10fb"]{
+  .sqs-html-content p {
+    font-family: 'Memphis-LT-Std-Medium';
+  }
+}
+
+.productDetails .product-title {
+  font-family: 'itc-esprit-std-book';
+}
+.summary-item-list-container {
+  .summary-item {
+    .summary-title a {
+      font-family: 'itc-esprit-std-book';
+      font-size: 24px;
+      line-height: 28.8px;
+      text-transform: capitalize;
+      font-weight: 400;
+    } 
+    .summary-excerpt p {
+      font-family: 'Memphis-LT-Std-Medium';
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 500;
+    }
+  }
 }
 
 /* Hiding navigation menu */
 .header-layout-nav-right .header-nav {
     visibility: hidden;
+}
+
+/* Remove a carousel function on product detail and display the images by just two columns */
+.ProductItem-gallery-slides {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  overflow: visible !important;
+}
+.ProductItem-gallery-slides-item {
+  flex: 0 0 50%; 
+  max-width: 50%; 
+  padding: 10px; 
+  box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  .ProductItem-gallery-carousel-controls {
+    display: none !important;
+  }
+  .ProductItem .ProductItem-gallery-current-slide-indicator {
+    display: none !important;
+  }
+  .ProductItem-gallery-slides-item {
+    position: static !important;
+    display: block !important;
+    visibility: visible !important;
+  }
+  .ProductItem-gallery-slides-item.going-next.selected.loaded {
+    animation: none !important;
+  }
+  .ProductItem-gallery-slides-item.going-next.prev-slide.next-loaded {
+    animation: none !important;
+  }
+  .ProductItem-gallery-slides:before {
+    padding-bottom: 0 !important;
+  }
 }
