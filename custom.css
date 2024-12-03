@@ -187,6 +187,7 @@ button.newsletter-form-button.sqs-system-button.sqs-editable-button-layout.sqs-e
 .ProductItem-relatedProducts .grid-main-meta .grid-title,
 .products-flex-container .grid-main-meta .grid-title {
   text-transform: capitalize;
+  font-family: 'itc-esprit-std-book';
 }
 
 /* category titles */
@@ -232,6 +233,16 @@ section[data-section-id="673bc5e58ccb794c56ee10fb"]{
       font-size: 20px;
       line-height: 24px;
       font-weight: 500;
+    }
+  }
+}
+
+section[data-section-id="673bab19da08c94e3bce2e62"] {
+  .summary-item-list-container {
+    .summary-item {
+      .summary-title a {
+		text-transform: uppercase;
+      }
     }
   }
 }
